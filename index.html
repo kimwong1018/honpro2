@@ -6,7 +6,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    <title>chart1</title>
+    <title>chart2</title>
     <script src="echarts.min.js"></script>
 </head>
 <body>
@@ -17,9 +17,10 @@
         $(function() {
             var myChart2 = echarts.init(document.getElementById('main2'));
 
-      app.title = '堆叠条形图';
-
 option = {
+         title: {
+                    text: '不同年齡長者患上認知障礙症比率',
+                },
     tooltip : {
         trigger: 'axis',
         axisPointer : {            // 坐标轴指示器，坐标轴触发有效
