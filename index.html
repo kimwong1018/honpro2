@@ -19,7 +19,7 @@
 
 option = {
          title: {
-                    text: '不同年齡長者患上認知障礙症比率',
+                    text: '',
                 },
     tooltip : {
         trigger: 'axis',
@@ -28,7 +28,7 @@ option = {
         }
     },
     legend: {
-        data: ['直接访问', '邮件营销']
+        data: ['女性', '男性']
     },
     grid: {
         left: '3%',
@@ -41,32 +41,32 @@ option = {
     },
     yAxis: {
         type: 'category',
-        data: ['周一','周二']
+        data: ['2010','2036']
     },
     series: [
         {
-            name: '直接访问',
+            name: '女性',
             type: 'bar',
-            stack: '总量',
+            stack: '總計',
             label: {
                 normal: {
                     show: true,
                     position: 'insideRight'
                 }
             },
-            data: [320, 302]
+            data: [55307, 145542]
         },
         {
-            name: '邮件营销',
+            name: '男性',
             type: 'bar',
-            stack: '总量',
+            stack: '總計',
             label: {
                 normal: {
                     show: true,
                     position: 'insideRight'
                 }
             },
-            data: [120, 132]
+            data: [31096, 79490]
         },
    
     ]
